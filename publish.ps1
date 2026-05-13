@@ -13,7 +13,7 @@ $ContentDir = "$PSScriptRoot\content"
 
 # 1. Sync wiki pages
 Write-Host "Syncing wiki pages..." -ForegroundColor Cyan
-$wikiItems = @("entities", "concepts", "topics", "summaries", "index.md", "log.md")
+$wikiItems = @("entities", "concepts", "topics", "summaries", "sources", "index.md", "log.md")
 foreach ($item in $wikiItems) {
     $src = "$WikiDir\$item"
     $dst = "$ContentDir\$item"
